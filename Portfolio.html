@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello</title>
+  <link rel="stylesheet" href="Portfolio.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Bibliotheke</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="#social">About</a>
+        <a class="mdl-navigation__link" href="#foot">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Bibliotheke</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Home</a>
+      <a class="mdl-navigation__link" href="#social">About</a>
+      <a class="mdl-navigation__link" href="#foot">Contact</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+      <ul id="myUL">
+        <li><a href="#">Video1
+          <video width="320" height="240" controls>
+          <source src="mov_bbb.mp4" type="video/mp4">
+          <source src="mov_bbb.ogg" type="video/ogg">
+        </video>
+        </a></li>
+        <li><a href="#">
+          Video2
+          <video width="320" height="240" controls>
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+          </video>
+        </a></li>
+        <li><a href="#">
+          Video3
+          <video width="320" height="240" controls>
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+          </video>
+        </a></li>
+      </ul>
+
+      <script src="Portfolio.js"></script>
+
+
+      <div id="social" class="socialmedia">
+        <div class="container">
+          <a href="Portfolio.html">www.facebook.com/mohamed.mo.583</a>
+        </div>
+      </div>
+
+      <footer id="foot">
+        <p>Contact Information: Mohamed Mohamud s0573612<br>
+          <a href="mailto:hege@example.com">Mohamed.Mohamud@Student.HTW-Berlin.de</a></p>
+      </footer>
+    </div>
+  </main>
+</div>
+</html>
